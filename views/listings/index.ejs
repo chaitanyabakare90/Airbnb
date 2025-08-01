@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander list</title>
+</head>
+<body>
+    <h3>All lists</h3>
+    <ul>
+    <%  for(let listings of alllistings){ %>
+        <li><a href="/listings/<%= listings.id %>"><%= listings.title %></a></li>
+    <% } %>
+</ul>
+</body>
+</html>
+
